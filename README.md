@@ -64,3 +64,81 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Laragigs - Job Listing Application
+
+This repository contains the source code for the Laragigs project, a job listing application built using the Laravel PHP framework and MySQL. The project is created by following the "[Laravel From Scratch](https://youtu.be/MYyJ4PuL4pY)" course by [Traversy Media](https://traversymedia.com).
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+
+## Introduction
+The application allows users to post job listings, apply for jobs, and manage their job postings. The course covers everything from setting up a Laravel project to implementing user authentication and authorization.
+
+## Features
+- User Registration and Authentication
+- Job Listings Management (Create, Read, Update, Delete)
+- Search and Filter Job Listings
+- User Roles and Permissions
+- File Uploads
+- Pagination
+
+## Installation
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/bradtraversy/laragigs.git
+    cd laragigs
+    ```
+
+2. Install dependencies:
+    ```bash
+    composer install
+    npm install
+    ```
+
+3. Copy the example environment file and configure the environment variables:
+    ```bash
+    cp .env.example .env
+    ```
+
+4. Generate the application key:
+    ```bash
+    php artisan key:generate
+    ```
+
+5. Set up the database:
+    - Create a MySQL database.
+    - Update the `.env` file with your database credentials.
+
+6. Run the migrations and seed the database:
+    ```bash
+    php artisan migrate --seed
+    ```
+
+7. Start the local development server:
+    ```bash
+    php artisan serve
+    ```
+
+8. Compile the assets:
+    ```bash
+    npm run dev
+    ```
+
+## Usage
+After setting up the project, you can access the application by navigating to `http://localhost:8000` in your web browser. You can register a new user, create job listings, and explore the various features of the application.
+
+## Technologies
+- Laravel
+- PHP
+- MySQL
+- Blade Templates
+- Alpine.js
+- Composer
+- NPM
